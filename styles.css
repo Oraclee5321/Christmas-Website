@@ -1,0 +1,19 @@
+body{
+    background-image: url(images/snowflakes.gif);
+}
+.active {
+    background-color: maroon;
+    border-radius: 20px;
+    
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item:hover{
+    background-color: aqua;
+    color: black !important;
+    border-radius: 20px;
+}
