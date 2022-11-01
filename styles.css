@@ -25,14 +25,9 @@ body{
 
 .santa-glasses {margin-top: 5em}
 
-
 #countdown-container {
-    display:flex;
-    background-color: #1a2e35;
+    border-radius: 100px;
     margin-top: 5em;
-}
-
-#countdown-timer {
-    float:right;
-    margin-top: 12.5%;
+    color:red;
+    background-color:lightgrey !important;
 }

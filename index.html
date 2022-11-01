@@ -34,11 +34,30 @@
               <span class="navbar-brand">North Pole Inc.</span>
         </div>
     </nav>
-    <div class="container-lg" id="countdown-container">
+    <div class="container-lg text-center bg-light" id="countdown-container">
+        <div class="row">
+            <div class="col"><img src="images/santa-no-background.png" class="img-fluid"></div>
+            <div class="col d-flex align-items-center" ><h2 id="countdown-timer"><p id="timer"></p></h2></div>
+            <div class="col d-flex align-items-center"><h2><p>Left till Christmas!</p></h2></div>
+        </div>
+        
 
-        <img src="images/santa-no-background.png" class="img-fluid">
-
-    <h1 id="countdown-timer">dd/hh/mm</h1>
+    
 </div>
+<script>
+    setInterval(countdownChange, 1000);
+
+    function countdownChange(){
+        const today = new Date(Date.now());
+        const christmas = new Date("12/25/2022");
+        var timeLeft = Math.abs(today - christmas) / 1000;
+        var days = Math.floor(timeLeft / 60 / 60 / 24);
+        var hours = Math.floor(timeLeft / 60 / 60 % 24);
+        var minutes = Math.floor(timeLeft / 60 % 60);
+        var seconds = Math.floor(timeLeft % 60);
+        document.getElementById("timer").innerHTML = days+"D "+hours+"H "+minutes+"M "+seconds+"S"
+    }
+
+</script>
 </body>
 </html>
