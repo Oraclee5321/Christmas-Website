@@ -1,9 +1,8 @@
 body{
-    background-image: url(images/snowflakes.gif);
+    background-image: url(images/snowflakes.jpg);
 }
 .active {
-    background-color: maroon;
-    border-radius: 20px;
+    background-color: #97BFB4 !important;
     
 }
 
@@ -12,8 +11,23 @@ body{
     margin-right: 10px;
 }
 
-.nav-item:hover{
-    background-color: aqua;
+.nav-link:hover{
+    background-color: #DD4A48 !important;
     color: black !important;
-    border-radius: 20px;
+}
+
+.nav-item{
+    color:black !important;
+}
+.navbar-text{
+    color: black !important;
+}
+
+.santa-glasses {margin-top: 5em}
+
+#countdown-container {
+    border-radius: 100px;
+    margin-top: 5em;
+    color:red;
+    background-color:lightgrey !important;
 }
