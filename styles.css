@@ -31,3 +31,10 @@ body{
     color:red;
     background-color:lightgrey !important;
 }
+
+#card-game-container {
+    margin-top: 5em;
+}
+#card-game-container .col-md-auto{
+    background-color: lightgray !important;
+}
