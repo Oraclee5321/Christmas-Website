@@ -1,5 +1,6 @@
 var score = 0;
 var hasWon = 0;
+
 function randomizeImages(){
   const randomSet = new Set();
   while (randomSet.size !== 6){
