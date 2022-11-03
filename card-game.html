@@ -18,7 +18,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">North Pole Inc</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/npi.png" width="100" height="75" alt="North Pole Inc"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -31,20 +31,36 @@
                     </ul>
                 </div>
             </div>
-              <span class="navbar-brand">North Pole Inc.</span>
+              <span class="navbar-brand"><a href="index.html"><img src="images/npi.png" width="80" height="50" alt="North Pole Inc"></a></span>
         </div>
     </nav>
+    <div class="modal fade" id="win_screen">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="wins_screen_title">You Found Santa!</h1>
+                </div>
+                <div class="modal-body">
+                    <span>You found Santa in <span id="score"></span> card flips!</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Replay?</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Card Game -->
     <div class="container-lg" id="card-game-container">
         <div class="row gy-1 justify-content-center ">
-            <div class="col-md-auto text-center"><img id="card_back_1" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_1" class="img-fluid p-1" src="images/christmas-card-thumbnail.png" style="display: none;max-width:211px;max-height:296px"></div>
-            <div class="col-md-auto text-center"><img id="card_back_2" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"></div>
-            <div class="col-md-auto text-center"><img id="card_back_3" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_1" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_1" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_2" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_2" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_3" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_3" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
         </div>
         <div class="row gy-1 justify-content-center">
-            <div class="col-md-auto text-center"><img id="card_back_4" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"></div>
-            <div class="col-md-auto text-center"><img id="card_back_5" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"></div>
-            <div class="col-md-auto text-center"><img id="card_back_6" class="img-fluid p-1" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_4" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_4" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_5" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_5" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
+            <div class="col-md-auto text-center"><img id="card_back_6" class="img-fluid p-1 xmas_card_front" src="images/card-game-images/back-of-card.png" style="max-width:211px;max-height:296px"><img id="card_front_6" class="img-fluid p-1 xmas_card_back" src="" style="display: none;max-width:211px;max-height:296px"></div>
         </div>
     </div>
 
